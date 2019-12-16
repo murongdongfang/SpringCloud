@@ -5,6 +5,9 @@ import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.web.client.RestTemplate;
 
+import com.netflix.loadbalancer.IRule;
+import com.whpu.MyRule.MySelfRule;
+
 @Configuration
 public class ConfigBean {
 
@@ -13,4 +16,8 @@ public class ConfigBean {
 	public RestTemplate getRestTemplate() {
 		return new RestTemplate();
 	}
+	
+
+	
+	
 }
